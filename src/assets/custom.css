@@ -1,0 +1,54 @@
+/*Custom quizz styles*/
+
+.option-default{
+    @apply cursor-pointer; 
+}
+
+/*hide score*/
+.option-default div:nth-child(1){
+    @apply hidden; 
+}
+
+.option-default div:nth-child(2) div:nth-child(1){
+    @apply inline bg-gray-100 text-gray-800; 
+}
+
+.option-default div:nth-child(2){  
+    @apply bg-gray-100 text-gray-800; 
+}
+
+/*for red wrong option*/
+.option-wrong{
+    @apply cursor-pointer; 
+}
+
+
+.option-wrong div:nth-child(1){
+    @apply hidden; 
+}
+
+.option-wrong div:nth-child(2) div:nth-child(1){
+    @apply inline bg-gray-800 text-white; 
+}
+
+.option-wrong div:nth-child(2){  
+    @apply bg-red-800 text-white; 
+}
+
+/*correct option*/
+.option-correct{
+    @apply cursor-pointer; 
+}
+
+
+.option-correct div:nth-child(1){
+    @apply inline; 
+}
+
+.option-correct div:nth-child(2) div:nth-child(1){
+    @apply inline bg-gray-800 text-white; 
+}
+
+.option-correct div:nth-child(2){  
+    @apply bg-green-800 text-white; 
+}
